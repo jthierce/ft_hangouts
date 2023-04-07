@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ft_hangouts</string>
+    <string name="contact">Contact</string>
+    <string name="theme">Theme</string>
+    <string name="image_42_description">Image of 42</string>
+    <string name="add_contact">Add</string>
+    <string name="button_back">Button back</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="firstname">Firstname</string>
+    <string name="lastname">Lastname</string>
+    <string name="number">Number</string>
+    <string name="button_save">Save</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="permission_granted">Permission Granted!</string>
+    <string name="permission_denied">Permission not granted!</string>
+    <string name="select_action">Select The Action</string>
+    <string name="inspect_contact">Inspect contact</string>
+    <string name="edit_contact">Edit contact</string>
+    <string name="delete_contact">Delete contact</string>
+    <string name="confirmed_delete_contact">. Are you sure you want to delete?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="misssing_information_contact">Please enter name and number</string>
+    <string name="sms_failed">Sms failed</string>
+    <string name="sms_sent">Sms was sent!</string>
+    <string name="email">Email</string>
+    <string name="entreprise">Enterprise</string>
+    <string name="note">Note</string>
+</resources>

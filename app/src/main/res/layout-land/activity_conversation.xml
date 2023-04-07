@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.ConversationActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#717070"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="?attr/actionModeCloseDrawable"
+            android:contentDescription="@string/button_cancel" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo_42"
+            android:contentDescription="@string/image_42_description" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            android:paddingTop="20dp"
+            android:text="@string/contact"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:id="@+id/textViewTitle"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText_message"
+        android:layout_width="600dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/message"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="106dp"
+        android:layout_height="61dp"
+        android:text="@string/send"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editText_message"
+        app:layout_constraintTop_toTopOf="@+id/editText_message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

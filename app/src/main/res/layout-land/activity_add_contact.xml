@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.AddContactActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/primary"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-85dp"
+        tools:layout_editor_absoluteY="-1dp">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/button_back"
+            android:src="?attr/actionModeCloseDrawable" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/image_42_description"
+            android:src="@drawable/logo_42" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="15dp"
+            android:text="@string/contact"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText_contact_first_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="FirstName"
+        android:ems="10"
+        android:hint="@string/firstname"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_contact_last_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="LastName"
+        android:ems="10"
+        android:hint="@string/lastname"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_contact_first_name"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <EditText
+        android:id="@+id/editText_contact_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="phoneNumber"
+        android:ems="10"
+        android:hint="@string/number"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_contact_last_name"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_cancel" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_save" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
